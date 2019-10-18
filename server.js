@@ -1,6 +1,7 @@
 const express = require('express');
 const app = express();
 const hbs = require('hbs');
+let PORT = process.env.PORT || 3000;
 
 //heroku redy
 app.use(express.static(__dirname + '/public'));
@@ -31,4 +32,4 @@ app.get('/about', (req,res) =>{
 //     res.send('Estas en hola');
 // });
  
-app.listen(3000);
+app.listen(PORT);
