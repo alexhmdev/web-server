@@ -1,7 +1,7 @@
 const express = require('express');
 const app = express();
 const hbs = require('hbs');
-let PORT = process.env.PORT || 3000;
+const PORT = process.env.PORT || 3000;
 
 //heroku redy
 app.use(express.static(__dirname + '/public'));
